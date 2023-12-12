@@ -1,0 +1,115 @@
+
+header {
+  background-color: #263238;
+  color: #fff;
+  padding: 20px 0; 
+  transition: background-color 0.3s ease, padding 0.3s ease; 
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+  transition: font-size 0.3s ease; 
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  transition: justify-content 0.3s ease;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 16px;
+  transition: color 0.3s ease; 
+}
+
+li{
+  list-style: none;
+}
+.Notes a{
+  text-decoration: none;
+  color: black;
+  border: 2px solid gray;
+  padding: 6px;
+  font-size: 20px;
+  background-color:white;
+  border-radius: 20px;
+  line-height: 100px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+main {
+  padding: 20px;
+}
+
+.Notessec {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.Notes {
+  width: 20vw;
+  margin: 10px;
+  text-align: center;
+  background-color: rgb(221, 219, 219);
+  box-shadow: 5px 5px 20px rgb(31, 30, 30);
+  margin-top: 20px;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 20px;
+}
+.Notes:hover {
+  transform: scale(1.02);
+}
+
+.Notes img {
+  max-width: 100%;
+  height: auto;
+  height:35vh;
+  width: 18vw;
+  margin-top: 10px;
+}
+footer {
+  background-color: #263238;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0; 
+  transition: background-color 0.3s ease, padding 0.3s ease; 
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+
+@media (max-width: 768px) {
+  .Notes {
+      width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 480px) {
+  .Notes {
+      width: 100%;
+  }
+  .Notes img{
+    width: 45vw;
+    height: 40vh;
+  }
+}
